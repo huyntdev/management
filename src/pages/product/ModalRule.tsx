@@ -53,7 +53,7 @@ const ModalRule = ({
   //Handle Add Rule
   const handleAddRule = () => {
     setRules((prev) => {
-      //Kiểm tra xem element trước đó có buy_to không, có thì tăng lên 1
+      //Check element before having buy_to, if having to increase + 1
       const buyFromPrev = prev[prev.length - 1].buy_to
         ? Number(removeNonNumericCharacters(prev[prev.length - 1].buy_to)) + 1
         : undefined;

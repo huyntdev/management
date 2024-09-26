@@ -32,14 +32,14 @@ export const fakeProducts = (products: IProduct[], queries: TQuery) => {
       updated_at: moment(new Date()).format("YYYY-MM-DD HH:mm:ss"),
     }));
 
-    // Lọc theo search
+    // Filter by search
     if (search) {
       filteredProducts = filteredProducts.filter((product) =>
         product.title.toLowerCase().includes(search.toLowerCase())
       );
     }
 
-    // Lọc theo status
+    // Filter by status
     if (status === "active") {
       filteredProducts = filteredProducts.filter(
         (product) => product.rules.length > 0

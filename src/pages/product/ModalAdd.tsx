@@ -23,7 +23,7 @@ const ModalAdd = ({
       price: removeNonNumericCharacters(product.price),
     };
     console.log("🚀 ~ handleSubmit ~ data:", data);
-    toast.success(`Thêm sản phẩm: ${data.title} thành công`);
+    toast.success(`Add product: ${data.title} successfully`);
   };
 
   return (
