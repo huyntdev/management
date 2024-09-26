@@ -1,0 +1,11 @@
+git add .
+git commit -m "Save"
+git push
+npm run build
+rm -rf ../management_build/*
+mv ./dist/* ../management_build/
+cd ../management_build
+git add .
+git commit -m "New"
+git push -f
+cd ../management
