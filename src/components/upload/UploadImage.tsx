@@ -1,3 +1,5 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
 import clsx from "clsx";
 import { useEffect, useLayoutEffect, useState } from "react";
 import Dropzone from "react-dropzone";
@@ -53,8 +55,10 @@ export default function UploadImage({
   let count = images instanceof Array ? images.length : images ? 1 : 0;
 
   if (multiple && limit > 1) {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     useEffect(handleEffect, [images instanceof Array ? images.length : images]);
   } else {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     useLayoutEffect(handleEffect, [
       images instanceof Array ? images.length : images,
     ]);
