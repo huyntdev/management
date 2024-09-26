@@ -47,7 +47,7 @@ const ModalRule = ({
     toast.success(
       `Product: ${selectedProductRule?.title} updated ${newRules.length} rules successfully`
     );
-    console.log("🚀 ~ handleSubmit ~ value:", newRules);
+    console.log("🚀 ~ handleSubmit ~ value: ", newRules);
   };
 
   //Handle Add Rule
